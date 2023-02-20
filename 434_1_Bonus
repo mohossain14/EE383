@@ -1,0 +1,9 @@
+import datetime
+
+date = datetime.datetime.today()
+date1 = datetime.datetime.today() + datetime.timedelta(days = -30)
+date2 = datetime.datetime.today() + datetime.timedelta(days = 30)
+
+print("Current Date: ",date)
+print("Month Ago Date: ",date1)
+print("Month From Now Date: ",date2)
