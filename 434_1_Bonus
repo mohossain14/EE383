@@ -1,9 +1,14 @@
 import datetime
 
-date = datetime.datetime.today()
-date1 = datetime.datetime.today() + datetime.timedelta(days = -30)
-date2 = datetime.datetime.today() + datetime.timedelta(days = 30)
+date = datetime.datetime.today() #Current date
+date1 = datetime.datetime.today() + datetime.timedelta(days = -30) #Date from a month ago
+date2 = datetime.datetime.today() + datetime.timedelta(days = 30) #Date from a month in the future
+
+d1 = datetime.date(2023,2,21)
+d2 = datetime.date(2023,12,19)
+delta = d2 - d1 #takes the difference of two dates to find birthday
 
 print("Current Date: ",date)
 print("Month Ago Date: ",date1)
 print("Month From Now Date: ",date2)
+print("Countdown to B-Day:", delta.days, "days")
